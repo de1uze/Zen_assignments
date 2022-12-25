@@ -1,0 +1,158 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I’m JavaScript!");
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+
+------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
+
+alert("I’m invoked!");
+
+------------------------------------------------
+
+alert("I'm JavaScript!");
+alert('Hello') ;// this line is not having semicolon
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working
+
+#explaination : it works because of usage of template literals and "+" operator works as a concatination operator
+
+------------------------------------------------
+
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek";
+admin = fname+lname;
+alert( admin ); // "Guvi geek"
+
+
+#fixed
+
+------------------------------------------------
+
+Part 2
+
+------------------------------------------------
+
+var numArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 0; i <= 10; i++) {
+ new_string += numArr[i] ;
+}
+console.log(new_string);
+
+------------------------------------------------
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 1; i <= 10; i++) {
+ new_string += numsArr[i] + "," }
+console.log(new_string);
+
+
+------------------------------------------------
+
+var new_string = "";
+ 
+for (var i = 11; i > 0; i -- ) {
+ new_string += i + " "}
+console.log(new_string);
+
+------------------------------------------------
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = "even";
+ }
+}
+console.log(numsArr);
+
+------------------------------------------------
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 != 0 )
+ {
+ numsArr[i] = "even";
+ }
+}
+console.log(numsArr);
+
+------------------------------------------------
+
+let numArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+let sum = 0;
+for (let i = 0; i <=10; i++) 
+{
+ 
+ sum = sum +  numArr[i];
+ 
+}
+console.log(sum);
+
+------------------------------------------------
+var numArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <=10; i++) 
+{
+ if(numArr[i]%2==0);
+ 
+ sum += numArr[i]
+}
+console.log(sum);
+
+------------------------------------------------
+
+aa = (a,b,c) => {
+
+    let a=f;
+    let b=s;
+    let c=t;
+    if(f>s &&f>t){
+    console.log(f)}
+    else if(s>f && s>t){
+    console.log(s)}
+    else{
+    console.log(t)}
+   }
+aa(1,2,3);
+
+------------------------------------------------
+
+let n = 123;
+let sum = 0;
+console.log(add(n));
+function add(n)
+{
+
+for(var i=0;i<n.length;i++){
+ sum = sum + n[i];
+ 
+ }
+ return sum;
+}
+
+
