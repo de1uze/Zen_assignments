@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4</title>
+   <script>
+    const request = new XMLHttpRequest();
+    request.open("GET","https://restcountries.com/v3.1/all");
+    request.onload = function()
+    {
+        let a = JSON.parse(request.response);
+        for(i=0;i<a.length;i++){
+            console.log(a[i].name);
+        }
+    };
+    request.send(JSON.flag);
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
