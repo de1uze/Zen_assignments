@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    letter-spacing: 2.3px;
+}
+
+
+
+body {
+    background-color: #303e47;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.header1 {
+    margin-top: 20px;
+}
+
+.header2 {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+.header h1 {
+    color: #ff5959;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    color: white;
+    font-size: 18px;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: center;
+    height: 420px;
+    margin-top: 40px;
+}
+
+.left {
+    background-color: #ff9e1a;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-left: 25%;
+}
+
+.left img {
+    margin-top: -25px;
+}
+
+.left h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.right {
+    background-color: #00b2e2;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-right: 25%;
+}
+
+.right h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.second-div {
+    margin-top: 8%;
+    background-color: #ff5959;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 40px;
+
+
+}
+
+.inner-container2 {
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    margin-top: 8%;
+}
+
+.left2 {
+    background-color: #00b2e2;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-left: 25%;
+}
+
+.left2 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left2 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.right2 {
+    background-color: #fe5959;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-right: 25%;
+}
+
+.right2 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right2 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.inner-container3 {
+    display: flex;
+    justify-content: center;
+    height: 370px;
+    margin-top: 8%;
+}
+
+.left3 {
+    background-color: #ff9e1b;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-left: 25%;
+}
+
+.left3 img {
+    margin-top: -20px;
+}
+
+.left3 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left3 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.right3 {
+    background-color: #00b2e2;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-right: 25%;
+}
+
+.right3 img {
+    margin-top: -20px;
+}
+
+.right3 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right3 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.second-div2 {
+    margin-top: 8%;
+    background-color: #00b2e2;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 40px;
+    display: flex;
+    color: white;
+}
+
+.second-div2-2 {
+    margin-left: 180px;
+}
+
+.second-div3 {
+    margin-top: 8%;
+    background-color: #ff9e1b;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 40px;
+    display: flex;
+    color: white;
+}
+
+.second-div3-2 {
+    margin-left: 180px;
+}
+
+.inner-container4 {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    margin-top: 8%;
+}
+
+.left4 {
+    background-color: #00b2e2;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-left: 25%;
+}
+
+.left4 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left4 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.right4 {
+    background-color: #ff5959;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    margin-right: 25%;
+}
+
+.right4 h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right4 p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}

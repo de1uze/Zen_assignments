@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Survey Form
+    </title>
+
+    <style>
+       
+        body {
+            font-family: Verdana;
+            display: inline-block;
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+       
+        form {
+            background-color: #fff;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+     
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        span {
+            color: red;
+        }
+
+       
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+   
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+       
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .rate {
+            float: left;
+            height: 46px;
+            padding: 0 10px;
+        }
+
+        .rate:not(:checked)>input {
+            position: absolute;
+            top: -9999px;
+        }
+
+        .rate:not(:checked)>label {
+            float: right;
+            width: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .rate:not(:checked)>label:before {
+            content: '★ ';
+        }
+
+        .rate>input:checked~label {
+            color: #ffc700;
+        }
+
+        .rate:not(:checked)>label:hover,
+        .rate:not(:checked)>label:hover~label {
+            color: #deb217;
+        }
+
+        .rate>input:checked+label:hover,
+        .rate>input:checked+label:hover~label,
+        .rate>input:checked~label:hover,
+        .rate>input:checked~label:hover~label,
+        .rate>label:hover~input:checked~label {
+            color: #c59b08;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            display: inline-block;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+
+   
+    <form id="form">
+
+       
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name <span>*</span>
+            </label>
+
+            <div class="row">
+                <div class="column">
+                    <input type="text" id="name" />
+                    <p>First</p>
+                </div>
+                <div class="column">
+                    <input type="text" id="name" />
+                    <p>Last</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email <span>*</span>
+            </label>
+
+          
+            <input type="email" id="email" placeholder="Enter your email" />
+
+            <br>
+            <div class="form-control">
+                <div>Your Experience <span>*</span></div>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+
+            <br>
+            <p>How satisfied are you with us ? </p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+                <tr>
+                    <td>Purchase</td>
+                    <td><input type="radio" name="r1"></td>
+                    <td><input type="radio" name="r1"></td>
+                    <td><input type="radio" name="r1"></td>
+                    <td><input type="radio" name="r1"></td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="radio" name="r2"></td>
+                    <td><input type="radio" name="r2"></td>
+                    <td><input type="radio" name="r2"></td>
+                    <td><input type="radio" name="r2"></td>
+                    <td><input type="radio" name="r2"></td>
+                </tr>
+                <tr>
+                    <td>Company Overall</td>
+                    <td><input type="radio" name="r3"></td>
+                    <td><input type="radio" name="r3"></td>
+                    <td><input type="radio" name="r3"></td>
+                    <td><input type="radio" name="r3"></td>
+                    <td><input type="radio" name="r3"></td>
+                </tr>
+            </table>
+
+            <br>
+            <p>How likely are you to </p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Very Unlikely</th>
+                    <th>Unlikely</th>
+                    <th>Neutral</th>
+                    <th>Likely</th>
+                    <th>Very Likely</th>
+                </tr>
+                <tr>
+                    <td>Buy again from us</td>
+                    <td><input type="radio" name="rr1"></td>
+                    <td><input type="radio" name="rr1"></td>
+                    <td><input type="radio" name="rr1"></td>
+                    <td><input type="radio" name="rr1"></td>
+                    <td><input type="radio" name="rr1"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our <br> Product to others </td>
+                    <td><input type="radio" name="rr2"></td>
+                    <td><input type="radio" name="rr2"></td>
+                    <td><input type="radio" name="rr2"></td>
+                    <td><input type="radio" name="rr2"></td>
+                    <td><input type="radio" name="rr2"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our <br> Company to others </td>
+                    <td><input type="radio" name="rr3"></td>
+                    <td><input type="radio" name="rr3"></td>
+                    <td><input type="radio" name="rr3"></td>
+                    <td><input type="radio" name="rr3"></td>
+                    <td><input type="radio" name="rr3"></td>
+                </tr>
+            </table>
+
+            <p>Additional comments or suggestions </p>
+            <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;"> </textarea>
+           
+            <button style="width: 150px;" type="submit" value="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>
